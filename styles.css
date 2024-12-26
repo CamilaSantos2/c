@@ -1,0 +1,207 @@
+/* Configurações gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #000000, #a7a9ac);
+  color: #d9d9e8;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+/* Estilos para a página inicial */
+header h1 {
+  font-size: 3rem;
+  color: #000000;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.795);
+  margin-bottom: 20px;
+
+}
+
+#mensagem {
+  margin: 20px 0;
+}
+
+.caixaMensagem {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  color: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.caixaMensagem p {
+  line-height: 2.0;
+}
+
+.btnInicio {
+  padding: 15px 30px;
+  background-color: #ffffff21;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  cursor: pointer;
+  box-shadow: 0px 6px 12px rgb(255, 252, 252);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btnInicio:hover {
+  background-color: #fffcfc;
+  transform: scale(1.1);
+}
+
+/* Página de Memórias */
+#galeriaMemorias {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #000000, #a7a9ac);
+  color: #d9d9e8;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #f8f8f8;
+  margin-bottom: 20px;
+}
+
+.botoes button {
+  padding: 15px 30px;
+  background-color: #ffffff21;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 25px;
+  font-size: 1.4rem;
+  margin-top: 20px;
+  cursor: pointer;
+  box-shadow: 0px 6px 12px rgb(255, 252, 252);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.botoes button:hover {
+  background-color: #fffcfc;
+  transform: scale(1.1);
+}
+
+#memorias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+#memorias img,
+#memorias video,
+#memorias audio {
+  max-width: 200px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.mensagem-texto {
+  background-color: #000000;
+  border-radius: 10px;
+  padding: 10px;
+  color: #ffffff;
+  max-width: 300px;
+  word-wrap: break-word;
+}
+
+/* Estilos para o formulário de adicionar memórias */
+.formularioContainer {
+  background-color: #000000;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.6);
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formularioContainer input[type="file"] {
+  background-color: #000000;
+  border: none;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formularioContainer input[type="file"]:hover {
+  background-color: #ebebeb00;
+}
+
+.formularioContainer textarea {
+  background-color: #000000;
+  border: none;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 20px;
+  width: 100%;
+  min-height: 100px;
+  resize: vertical;
+  transition: background-color 0.3s;
+}
+
+.formularioContainer textarea:hover {
+  background-color: #ffffff;
+}
+
+.formularioContainer button {
+  padding: 12px 25px;
+  background-color: #050505;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-size: 1rem;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.formularioContainer button:hover {
+  background-color: #ffffff62;
+  transform: scale(1.05);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  .caixaMensagem {
+    font-size: 1.2rem;
+    padding: 20px;
+  }
+  
+  .btnInicio {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}
